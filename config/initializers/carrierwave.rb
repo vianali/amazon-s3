@@ -5,6 +5,7 @@ CarrierWave.configure do |config|
    aws_access_key_id: ENV['aws_access_key_id'],
    aws_secret_access_key: ENV['aws_secret_access_key'],
    region: ENV['region_primary'],
+   region: ENV['region_secondary'],
    path_style: true
 
 }
