@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170714183025) do
+ActiveRecord::Schema.define(version: 20170720111143) do
 
   create_table "pictures", force: :cascade do |t|
     t.string   "name"
@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(version: 20170714183025) do
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
     t.string   "mirror_attachment"
+    t.string   "unique_key"
+    t.string   "file_extension"
+    t.string   "file_size"
   end
 
 end
